@@ -9,7 +9,7 @@ class MButton {
     EdgeInsets? padding,
     EdgeInsets? margin,
     bool? isFullWidth,
-    required String text,
+    required Widget child,
     required VoidCallback onPressed,
   }) {
     return Container(
@@ -36,7 +36,7 @@ class MButton {
         ),
         child: Container(
           alignment: isFullWidth == true ? Alignment.center : null,
-          child: Text(text),
+          child: child,
         ),
       ),
     );

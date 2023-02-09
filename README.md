@@ -1,39 +1,45 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+## flutter_material_ui
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+A Flutter plugin for implement Material UI design for widget.
+Let's start...
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+To use this plugin, add flutter_material_ui as a dependency in your pubspec.yaml file.
+####Example
 
 ```dart
-const like = 'sample';
+import 'package:flutter/material.dart';
+import 'package:flutter_material_ui/flutter_material_ui.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        body: SafeArea(
+          child: MButton.defaultBtn(
+            child: Text('Open'),
+            onPressed: () {
+              print('Thank you');
+            },
+          ),
+        ),
+      ),
+    ),
+  );
+}
 ```
 
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+## Our Contributors
+[//]: contributor-faces
+<div style="display:flex;position:relative">
+  <a href="https://github.com/md-golamrabbani">
+    <img src="https://avatars.githubusercontent.com/u/39708967" title="Md. Golam Rabbani" width="70" height="70" style="border-radius: 100%">
+  </a>
+  <a href="https://github.com/ShekharUllah06">
+    <img src="https://avatars.githubusercontent.com/u/20273137" title="Md. Golam Rabbani" width="70" height="70" style="border-radius: 100%">
+  </a>
+  <a href="https://github.com/AshiqueImran">
+    <img src="https://avatars.githubusercontent.com/u/23379542?v=4" title="Md. Golam Rabbani" width="70" height="70" style="border-radius: 100%">
+  </a>
+</div>
