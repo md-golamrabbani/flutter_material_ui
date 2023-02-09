@@ -1,7 +1,7 @@
 name: flutter_material_ui
 description: In this package will contain all flutter widget that you can easily customize. We are try to help much better UI.
 version: 0.0.1
-homepage:
+homepage: https://github.com/md-golamrabbani/flutter_material_ui
 
 environment:
   sdk: ">=2.19.0 <3.0.0"
