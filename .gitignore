@@ -1,6 +1,6 @@
 */*
 main.dart
-!lib/
+!lib/*
 !assets/
 !test/
 !.gitignore
