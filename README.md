@@ -40,6 +40,6 @@ void main() {
     <img src="https://avatars.githubusercontent.com/u/20273137" title="Mia Abdullah Shekhar" width="70" height="70" style="border-radius: 100%">
   </a>
   <a href="https://github.com/AshiqueImran">
-    <img src="https://avatars.githubusercontent.com/u/23379542?v=4" title="Md. Ashiq Imran" width="70" height="70" style="border-radius: 100%">
+    <img src="https://avatars.githubusercontent.com/u/23379542?v=4" title="Md. Ashique Imran" width="70" height="70" style="border-radius: 100%">
   </a>
 </div>
