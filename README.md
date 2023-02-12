@@ -6,8 +6,7 @@ Let's start...
 ## Getting started
 
 To use this plugin, add flutter_material_ui as a dependency in your pubspec.yaml file.
-
-## Example
+#### Example
 
 ```dart
 import 'package:flutter/material.dart';
