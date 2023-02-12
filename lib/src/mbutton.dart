@@ -9,8 +9,8 @@ class MButton {
     EdgeInsets? padding,
     EdgeInsets? margin,
     bool? isFullWidth,
-    required Widget child,
     required VoidCallback onPressed,
+    required Widget child,
   }) {
     return Container(
       margin: margin,
@@ -43,25 +43,26 @@ class MButton {
   }
 
   static Widget gradientBtn({
-    List<Color>? gradientColors,
     double? borderRadius,
     EdgeInsets? padding,
     EdgeInsets? margin,
     bool? isFullWidth,
-    required Widget child,
     required VoidCallback onPressed,
+    required List<Color> gradientColors,
+    required Widget child,
   }) {
+    if (gradientColors.length < 2) {
+      gradientColors.add(Colors.blue);
+    }
     return Container(
       margin: margin ?? EdgeInsets.all(AppConstants.smSize / 2),
       padding: padding ?? EdgeInsets.all(AppConstants.smSize / 2),
       decoration: BoxDecoration(
-        gradient: gradientColors == null
-            ? null
-            : LinearGradient(
-                colors: gradientColors,
-                begin: Alignment.centerLeft,
-                end: Alignment.centerRight,
-              ),
+        gradient: LinearGradient(
+          colors: gradientColors,
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+        ),
         borderRadius: BorderRadius.all(
           Radius.circular(borderRadius ?? AppConstants.defaultSize / 4),
         ),
@@ -69,10 +70,12 @@ class MButton {
       child: GestureDetector(
         onTap: onPressed,
         child: MouseRegion(
-            cursor: SystemMouseCursors.click,
-            child: Container(
-                alignment: isFullWidth == true ? Alignment.center : null,
-                child: child)),
+          cursor: SystemMouseCursors.click,
+          child: Container(
+            alignment: isFullWidth == true ? Alignment.center : null,
+            child: child,
+          ),
+        ),
       ),
     );
   }
