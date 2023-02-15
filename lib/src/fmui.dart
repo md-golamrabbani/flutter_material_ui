@@ -1,23 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_material_ui/src/utils/app_constants.dart';
 
-class MButton {
-  static Widget defaultBtn({
+class FMUI {
+  /// flutter default button style with optional customization
+  static Widget button({
     Color? backgroundColor,
     Color? borderColor,
     double? borderRadius,
     EdgeInsets? padding,
     EdgeInsets? margin,
+    double? width,
+    double? height,
     bool? isFullWidth,
     required VoidCallback onPressed,
     required Widget child,
   }) {
     return Container(
       margin: margin,
+      width: width ?? width,
+      height: height ?? height,
       child: ElevatedButton(
-        onPressed: () {
-          onPressed.call();
-        },
+        onPressed: () => onPressed,
         style: ButtonStyle(
           backgroundColor: MaterialStateProperty.all(backgroundColor),
           padding: MaterialStateProperty.all(
@@ -42,6 +45,7 @@ class MButton {
     );
   }
 
+  /// flutter gradient button
   static Widget gradientBtn({
     double? borderRadius,
     EdgeInsets? padding,
