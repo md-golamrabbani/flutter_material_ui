@@ -13,4 +13,5 @@ class AppConstants {
   static Color successColor = Colors.green;
   static Color dangerColor = Colors.red;
   static Color warningColor = Colors.orange;
+  static const Color barrierColor = Color(0x8A000000);
 }
