@@ -9,5 +9,8 @@ class AppConstants {
   static Color whiteColor = Colors.white;
   static Color darkColor = Colors.black87;
   static Color lightColor = Colors.black26;
-  static Color successColor = Colors.green.shade300;
+  static Color primaryColor = Colors.blue;
+  static Color successColor = Colors.green;
+  static Color dangerColor = Colors.red;
+  static Color warningColor = Colors.orange;
 }
